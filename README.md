@@ -3,6 +3,8 @@ Have your env set:
 `AWS_ACCESS_KEY`
 `AWS_SECRET_ACCESS_KEY`
 
+oh and create and update tfvars file with a keyname that exists
+
 get you public ip address `dig +short myip.opendns.com @resolver1.opendns.com`
 
 then run command, filling in your public ip address `TF_VAR_dynamic_sshaccess='["your public ip from command above/32"]' terraform apply` 
